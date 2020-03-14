@@ -30,11 +30,11 @@ Output: 12
 
 package com.problems.problem1342;
 
-public class NumberOfStepsToReduceANumberToZero {
+public class Problem1342 {
 
 	public static void main(String[] args) {
 		
-		var instance = new NumberOfStepsToReduceANumberToZero();
+		var instance = new Problem1342();
 		
 		var input = 14;
 		
