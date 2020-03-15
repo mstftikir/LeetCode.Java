@@ -11,8 +11,26 @@ public class Problem1295 {
 		
 		System.out.println(result);
 	}
-
-    public int findNumbers(int[] nums) {
+	
+	// Solution with O(n) time complexity
+	public int findNumbers(int[] nums) {
+		int counter = 0;
+        Integer i = 0;
+        String s = "";
+        
+    	for (int num : nums) {
+    		i = num;
+    		s = i.toString();
+    		if(s.length() % 2 == 0) {
+    			counter++;
+    		}
+		}
+    	
+    	return counter;
+    }
+	
+/* O(n^2) time compexity
+ * public int findNumbers(int[] nums) {
         int innerCounter = 0, outerCounter = 0;
     	for (int num : nums) {
     		innerCounter = 0;
@@ -28,4 +46,6 @@ public class Problem1295 {
     	
     	return outerCounter;
     }
+ * */
+    
 }
