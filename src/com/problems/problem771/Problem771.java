@@ -20,6 +20,8 @@ The characters in J are distinct.
 
 package com.problems.problem771;
 
+import java.util.HashSet;
+
 public class Problem771 {
 
 	public static void main(String[] args) {
@@ -32,7 +34,26 @@ public class Problem771 {
 		
 		System.out.println(result);
 	}
+	//O(nlgn) solution
+    public int numJewelsInStones(String J, String S) {
+        int counter = 0;
+    	
+        HashSet<Character> hSet = new HashSet<Character>();
+        
+        for (int i = 0; i < J.length(); i++) {
+			hSet.add(J.charAt(i));
+		}
+        
+        for (int i = 0; i < S.length(); i++) {
+			if(hSet.contains(S.charAt(i))) {
+				counter++;
+			}
+		}
+        
+    	return counter;
+    }
 	
+	/* O(n^2) solution
     public int numJewelsInStones(String J, String S) {
         int counter = 0;
     	
@@ -45,8 +66,7 @@ public class Problem771 {
 		}
         
     	return counter;
-    	
     }
-	
+	*/
 
 }
