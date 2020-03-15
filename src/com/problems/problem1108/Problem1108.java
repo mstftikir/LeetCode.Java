@@ -16,15 +16,15 @@ public class Problem1108 {
         //return address.replace(".", "[.]");
     	
     	String result = "";
-    	var copyOfAddress = address.toCharArray();
-    	for (int i = 0; i < copyOfAddress.length; i++) {
-			if(copyOfAddress[i] == '.') {
+    	for (int i = 0; i < address.length(); i++) {
+			if(address.charAt(i) == '.') {
 				result += "[.]";
 			}
 			else {
-				result += copyOfAddress[i];
+				result += address.charAt(i);
 			}
 		}
+    	
     	return result;
     }
 }
