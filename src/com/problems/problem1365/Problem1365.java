@@ -32,6 +32,10 @@ Constraints:
 
 package com.problems.problem1365;
 
+import java.awt.List;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Problem1365 {
 
 	public static void main(String[] args) {
@@ -47,6 +51,26 @@ public class Problem1365 {
 
 	}
 	
+	// O(n) solution using sort
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+    	Integer[] copy =  new Integer[nums.length];
+    	
+    	for (int i = 0; i < nums.length; i++) {
+			copy[i] = nums[i];
+		}
+    	
+    	var list = Arrays.asList(copy);
+    	
+    	Collections.sort(list);
+    	
+    	for (int i = 0; i < nums.length; i++) {
+			nums[i] = list.indexOf(nums[i]);
+		}
+    	
+    	return nums;
+    }
+    
+	/* O(n^2) solution
     public int[] smallerNumbersThanCurrent(int[] nums) {
     	int result[] = new int [nums.length];
     	
@@ -60,5 +84,5 @@ public class Problem1365 {
     	
     	return result;
     }
-
+    */
 }
