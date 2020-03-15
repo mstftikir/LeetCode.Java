@@ -56,6 +56,7 @@ public class Problem1379 {
 		var instance = new Problem1379();
 		
 		TreeNode inputOriginal = new TreeNode(7);
+		
 		inputOriginal.left = new TreeNode(4);
 		inputOriginal.right = new TreeNode(3); // Example target
 		inputOriginal.right.left = new TreeNode(6);
