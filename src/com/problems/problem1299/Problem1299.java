@@ -32,7 +32,25 @@ public class Problem1299 {
 			System.out.println(i);		
 		}
 	}
+	public int[] replaceElements(int[] arr) {
+		
+		int size = arr.length, max = Integer.MIN_VALUE, temp;
+		
+		for (int i = size -1 ; i >= 0; i--) {
+			
+			temp = arr[i];
+			
+			arr[i] = max;
+				
+			max = Math.max(arr[i], temp);
+		}
 
+		arr[arr.length - 1] = -1;
+
+		return arr;
+	}
+	
+	/* Brute force O(N ^2) solution
 	public int[] replaceElements(int[] arr) {
 
 		for (int i = 0; i < arr.length; i++) {
@@ -50,4 +68,5 @@ public class Problem1299 {
 
 		return arr;
 	}
+	*/
 }
