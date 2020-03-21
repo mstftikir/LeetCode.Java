@@ -49,6 +49,5 @@ public class Problem1299 {
 		arr[arr.length - 1] = -1;
 
 		return arr;
-
 	}
 }
