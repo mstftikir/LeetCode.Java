@@ -26,11 +26,9 @@ package com.problems.problem938;
 
 public class Problem938 {
 
-	private int counter;
 	private int sum;
 	
 	Problem938(){
-		counter = 0;
 		sum = 0;
 	}
 	
@@ -64,11 +62,15 @@ public class Problem938 {
     	
     	if(root.val >= L && root.val <= R) {
     		sum += root.val;
-    		counter++;
     	}
     	
-    	traverse(root.left, L, R);
-    	traverse(root.right, L, R);
+    	if(root.val > L) {
+    		traverse(root.left, L, R);	
+    	}
+    	
+    	if(root.val < R) {
+        	traverse(root.right, L, R);
+    	}
     		
     }
 }
