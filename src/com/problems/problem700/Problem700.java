@@ -24,6 +24,7 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
 
 package com.problems.problem700;
 
+import com.problems.common.BuildBST;
 import com.problems.common.TreeNode;
 
 public class Problem700 {
@@ -31,11 +32,11 @@ public class Problem700 {
     public static void main(String[] args) {
         var instance = new Problem700();
 
-        TreeNode t = new TreeNode(5);
-        t.left = new TreeNode(2);
-        t.right = new TreeNode(7);
-        t.left.left = new TreeNode(1);
-        t.left.right = new TreeNode(3);
+        int [] input = {5, 2, 7, 1 ,3};
+
+        BuildBST BST = new BuildBST();
+
+        TreeNode t = BST.build(input);
 
         TreeNode result = instance.searchBST(t, 2);
 
