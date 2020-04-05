@@ -31,6 +31,7 @@ public class Problem933 {
 
     public static void main(String[] args) {
         RecentCounter obj = new RecentCounter();
+
         obj.ping(0);
         obj.ping(1);
         obj.ping(100);
