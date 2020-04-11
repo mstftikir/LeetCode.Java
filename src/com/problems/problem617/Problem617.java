@@ -27,6 +27,8 @@ Note: The merging process must start from the root nodes of both trees.
 
 package com.problems.problem617;
 
+import com.common.TreeNode;
+
 public class Problem617 {
 
     public static void main(String[] args) {

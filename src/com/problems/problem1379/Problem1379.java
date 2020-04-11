@@ -46,64 +46,62 @@ target node is a node from the original tree and is not null.
 
 package com.problems.problem1379;
 
-public class Problem1379 {
-	
-	public int foundValue;
-    public TreeNode foundAddress;
-    
-	public static void main(String[] args) {
-		
-		var instance = new Problem1379();
-		
-		TreeNode inputOriginal = new TreeNode(7);
-		
-		inputOriginal.left = new TreeNode(4);
-		inputOriginal.right = new TreeNode(3); // Example target
-		inputOriginal.right.left = new TreeNode(6);
-		inputOriginal.right.right = new TreeNode(19);
-		
-		TreeNode inputCloned = inputOriginal;
-		
-		var result = instance.getTargetCopy(inputOriginal , inputCloned, inputOriginal.right);
-		
-        //System.out.println(result.val);
-	}
-    
+import com.common.TreeNode;
 
-	public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+public class Problem1379 {
+
+    public int foundValue;
+    public TreeNode foundAddress;
+
+    public static void main(String[] args) {
+
+        var instance = new Problem1379();
+
+        TreeNode inputOriginal = new TreeNode(7);
+
+        inputOriginal.left = new TreeNode(4);
+        inputOriginal.right = new TreeNode(3); // Example target
+        inputOriginal.right.left = new TreeNode(6);
+        inputOriginal.right.right = new TreeNode(19);
+
+        var result = instance.getTargetCopy(inputOriginal, inputOriginal, inputOriginal.right);
+
+        System.out.println(result.val);
+    }
+
+
+    public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
         traverseOriginal(original, target);
-        
+
         traverseCloned(cloned);
-        
-        System.out.println(foundAddress);
-        
+
         return foundAddress;
     }
-    
-    public void traverseOriginal(final TreeNode tree, final TreeNode target){
-        if(tree == null){
+
+    public void traverseOriginal(final TreeNode tree, final TreeNode target) {
+        if (tree == null) {
             return;
         }
-        
-        if(tree.val == target.val){
+
+        if (tree.val == target.val) {
             foundValue = target.val;
             return;
         }
-        
+
         traverseOriginal(tree.left, target);
         traverseOriginal(tree.right, target);
     }
-    
-        public void traverseCloned(final TreeNode tree){
-        if(tree == null){
+
+    public void traverseCloned(final TreeNode tree) {
+        if (tree == null) {
             return;
         }
-        
-        if(tree.val == foundValue){
+
+        if (tree.val == foundValue) {
             foundAddress = tree;
             return;
         }
-        
+
         traverseCloned(tree.left);
         traverseCloned(tree.right);
     }
