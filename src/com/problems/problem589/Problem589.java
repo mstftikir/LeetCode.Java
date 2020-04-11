@@ -20,7 +20,7 @@ Output: [1,2,3,6,7,11,14,4,8,12,5,9,13,10]
 
 package com.problems.problem589;
 
-import com.problems.common.Node;
+import com.common.Node;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -34,7 +34,7 @@ The total number of nodes is between [0, 10^4]
 
 package com.problems.problem590;
 
-import com.problems.common.Node;
+import com.common.Node;
 
 import java.util.*;
 

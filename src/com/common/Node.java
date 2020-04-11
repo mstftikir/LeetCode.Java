@@ -1,4 +1,4 @@
-package com.problems.common;
+package com.common;
 
 import java.util.List;
 
