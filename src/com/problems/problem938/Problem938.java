@@ -24,6 +24,8 @@ The final answer is guaranteed to be less than 2^31.
 
 package com.problems.problem938;
 
+import com.common.TreeNode;
+
 public class Problem938 {
 
 	private int sum;
@@ -34,8 +36,8 @@ public class Problem938 {
 	
 	public static void main(String[] args) {
 		var instance = new Problem938();
-		
-		var input = new TreeNode(10);
+
+		TreeNode input = new TreeNode(10);
 		input.left = new TreeNode(5);
 		input.right = new TreeNode(15);
 		input.left.left = new TreeNode(3);
