@@ -1,4 +1,4 @@
-package com.problems.common;
+package com.common;
 
 public class TreeNode {
     public int val;

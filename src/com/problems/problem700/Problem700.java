@@ -24,8 +24,8 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
 
 package com.problems.problem700;
 
-import com.problems.common.BuildBST;
-import com.problems.common.TreeNode;
+import com.common.BuildBST;
+import com.common.TreeNode;
 
 public class Problem700 {
 
