@@ -39,6 +39,8 @@ Each node's value is either 0 or 1.
 
 package com.problems.problem1290;
 
+import com.common.ListNode;
+
 public class Problem1290 {
 
 	public static void main(String[] args) {
