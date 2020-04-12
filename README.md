@@ -1,2 +1,2 @@
 # LeetCode.Java
-LeetCode problems solutions using Java JDK 12 with minimum time complaxity and memory usage
+LeetCode solutions of problems with Java JDK 12 aiming to do that with minimum time complexity and memory usage
