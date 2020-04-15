@@ -27,4 +27,14 @@ public class BuildBST {
 
         return current;
     }
+
+
+    public void printInOrder(TreeNode root){
+        if(root == null)
+            return;
+
+        printInOrder(root.left);
+        System.out.println(root.val);
+        printInOrder(root.right);
+    }
 }
