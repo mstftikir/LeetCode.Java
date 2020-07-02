@@ -5,7 +5,7 @@ import java.util.*;
 public class Problem977 {
 
     public static void main(String[] args) {
-        var instance =new Problem977();
+        Problem977 instance =new Problem977();
 
         int [] input = {-4,-1,0,3,10};
 

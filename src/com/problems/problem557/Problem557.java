@@ -13,7 +13,7 @@ package com.problems.problem557;
 public class Problem557 {
 
     public static void main(String[] args) {
-        var instance = new Problem557();
+        Problem557 instance = new Problem557();
 
         String input = "Let's take LeetCode contest";
 

@@ -29,7 +29,7 @@ package com.problems.problem832;
 public class Problem832 {
 
 	public static void main(String[] args) {
-		var instance = new Problem832();
+		Problem832 instance = new Problem832();
 		
 		int [][] input = {{1,1,0},{1,0,1},{0,0,0}};
 		

@@ -35,7 +35,7 @@ public class Problem938 {
 	}
 	
 	public static void main(String[] args) {
-		var instance = new Problem938();
+		Problem938 instance = new Problem938();
 
 		TreeNode input = new TreeNode(10);
 		input.left = new TreeNode(5);
@@ -45,8 +45,8 @@ public class Problem938 {
 		input.right.right = new TreeNode(18);
 				
 		int L = 7, R = 15;
-		
-		var result = instance.rangeSumBST(input, L, R);
+
+		int result = instance.rangeSumBST(input, L, R);
 		
 		System.out.println(result);
 	}

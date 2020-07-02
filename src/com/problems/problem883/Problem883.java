@@ -43,7 +43,7 @@ package com.problems.problem883;
 
 public class Problem883 {
     public static void main(String[] args) {
-        var instance = new Problem883();
+        Problem883 instance = new Problem883();
 
         int[][] grid = {{1,1,1}, {1,0,1}, {1,1,1}};
 

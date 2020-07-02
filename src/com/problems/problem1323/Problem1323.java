@@ -39,7 +39,7 @@ package com.problems.problem1323;
 public class Problem1323 {
 	
 	public static void main(String[] args) {
-		var instance = new Problem1323();
+		Problem1323 instance = new Problem1323();
 		
 		int input = 9669;
 		
@@ -49,8 +49,8 @@ public class Problem1323 {
 	}
 	
     public int maximum69Number (int num) {
-        var s = Integer.toString(num);
-    	var c = s.toCharArray();
+        String s = Integer.toString(num);
+    	char[] c = s.toCharArray();
     	
     	for(int i = 0 ; i < c.length; i++) {
     		if(c[i] == '6') {

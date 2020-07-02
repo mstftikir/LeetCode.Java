@@ -23,11 +23,11 @@ package com.problems.problem709;
 public class Problem709 {
 
 	public static void main(String[] args) {
-		var instance = new Problem709();
-		
-		var input = "Hello";
-		
-		var result = instance.toLowerCase(input);
+		Problem709 instance = new Problem709();
+
+		String input = "Hello";
+
+		String result = instance.toLowerCase(input);
 		
 		System.out.println(result);
 	}

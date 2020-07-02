@@ -31,24 +31,22 @@ Output: "abcdefghijklmnopqrstuvwxyz"
 
 package com.problems.problem1309;
 
-import java.util.*;
-
 public class Problem1309 {
 
 	public static void main(String[] args) {
-		var insance = new Problem1309();
-		
-		var input = "10#11#12";
-		
-		var result = insance.freqAlphabets(input);
+		Problem1309 insance = new Problem1309();
+
+		String input = "10#11#12";
+
+		String result = insance.freqAlphabets(input);
 		
 		System.out.println(result);
 	}
 	
     public String freqAlphabets(String s) {
     	StringBuilder sb = new StringBuilder();
-    	
-    	var ch = s.toCharArray();
+
+		char[] ch = s.toCharArray();
     	
     	for (int i = 0; i < ch.length; i++) {
 			

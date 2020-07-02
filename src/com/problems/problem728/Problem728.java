@@ -24,7 +24,7 @@ import java.util.List;
 
 public class Problem728 {
     public static void main(String[] args) {
-        var instance = new Problem728();
+        Problem728 instance = new Problem728();
 
         int left = 1, right = 22;
 

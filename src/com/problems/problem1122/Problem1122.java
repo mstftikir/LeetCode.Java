@@ -26,7 +26,7 @@ import java.util.*;
 
 public class Problem1122 {
     public static void main(String[] args) {
-        var instance = new Problem1122();
+        Problem1122 instance = new Problem1122();
 
         int[] arr1 = {2, 3, 1, 3, 2, 4, 6, 7, 9, 2, 19}, arr2 = {2, 1, 4, 3, 9, 6};
 

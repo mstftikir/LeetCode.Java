@@ -44,13 +44,13 @@ import com.common.ListNode;
 public class Problem1290 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1290();
-		
-		var input = new ListNode(1);
+		Problem1290 instance = new Problem1290();
+
+		ListNode input = new ListNode(1);
 		input.next = new ListNode(0);
 		input.next.next = new ListNode(1);
-		
-		var result = instance.getDecimalValue(input);
+
+		int result = instance.getDecimalValue(input);
 		
 		System.out.println(result);
 	}

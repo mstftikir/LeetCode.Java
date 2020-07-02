@@ -32,11 +32,11 @@ package com.problems.problem1374;
 public class Problem1374 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1374();
+		Problem1374 instance = new Problem1374();
 		
-		var input = 4;
-		
-		var result = instance.generateTheString(input);
+		int input = 4;
+
+		String result = instance.generateTheString(input);
 		
 		System.out.println(result);
 	}

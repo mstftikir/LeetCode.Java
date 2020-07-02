@@ -45,24 +45,24 @@ package com.problems.problem1021;
 public class Problem1021 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1021();
+		Problem1021 instance = new Problem1021();
 		
-		var input = "(()())(())";
-		
-		var result = instance.removeOuterParentheses(input);
+		String input = "(()())(())";
+
+		String result = instance.removeOuterParentheses(input);
 		
 		System.out.println(result);
 	}
 	
     public String removeOuterParentheses(String S) {
-    	var res = "";
+		StringBuilder res = new StringBuilder();
     	int counter = 0;
     	
     	for(int i = 0; i < S.length(); i++) {
     		if(S.charAt(i) == '(') {    	
         		
     			if(counter > 0) {
-    				res += S.charAt(i);
+    				res.append(S.charAt(i));
     			}
     			
     			counter++;
@@ -72,12 +72,12 @@ public class Problem1021 {
     			
         		
     			if(counter > 0) {
-    				res += S.charAt(i);
+    				res.append(S.charAt(i));
     			}
     		}
     	}
     	
-        return res;
+        return res.toString();
     }
 
 }

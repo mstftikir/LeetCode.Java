@@ -36,12 +36,12 @@ package com.problems.problem1252;
 public class Problem1252 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1252();
+		Problem1252 instance = new Problem1252();
 
 		int n = 2, m = 3;
 		int[][] indices = { { 0, 1 }, { 1, 1 } };
 
-		var result = instance.oddCells(n, m, indices);
+		int result = instance.oddCells(n, m, indices);
 
 		System.out.println(result);
 
@@ -50,15 +50,15 @@ public class Problem1252 {
 	public int oddCells(int n, int m, int[][] indices) {
 		int[][] result = new int[n][m];
 
-		int row, col = 0;
-		for (int i = 0; i < indices.length; i++) {
+		int row, col;
+		for (int[] index : indices) {
 
-			row = indices[i][0];
+			row = index[0];
 			for (int j = 0; j < m; j++) {
 				result[row][j]++;
 			}
 
-			col = indices[i][1];
+			col = index[1];
 			for (int j = 0; j < n; j++) {
 				result[j][col]++;
 			}

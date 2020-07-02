@@ -25,12 +25,12 @@ import java.util.HashSet;
 public class Problem771 {
 
 	public static void main(String[] args) {
-		
-		var instance = new Problem771();
+
+		Problem771 instance = new Problem771();
 		
 		String J = "aA", S = "aAAbbbb";
 		
-		var result = instance.numJewelsInStones(J, S);
+		int result = instance.numJewelsInStones(J, S);
 		
 		System.out.println(result);
 	}
@@ -38,7 +38,7 @@ public class Problem771 {
     public int numJewelsInStones(String J, String S) {
         int counter = 0;
     	
-        HashSet<Character> hSet = new HashSet<Character>();
+        HashSet<Character> hSet = new HashSet<>();
         
         for (int i = 0; i < J.length(); i++) {
 			hSet.add(J.charAt(i));

@@ -40,7 +40,7 @@ import java.util.Map;
 
 public class Problem811 {
     public static void main(String[] args) {
-        var instance = new Problem811();
+        Problem811 instance = new Problem811();
 
         String[] input = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
 
@@ -73,7 +73,7 @@ public class Problem811 {
 
         List<String> result = new ArrayList<>(map.size());
 
-        for (var e : map.entrySet()) {
+        for (Map.Entry<String, Integer> e : map.entrySet()) {
             sb = new StringBuilder();
 
             sb.append(e.getValue());

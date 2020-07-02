@@ -26,7 +26,7 @@ package com.problems.problem461;
 public class Problem461 {
 
     public static void main(String[] args) {
-        var instance = new Problem461();
+        Problem461 instance = new Problem461();
 
         int x = 1, y = 4;
 
