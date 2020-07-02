@@ -56,18 +56,18 @@ import java.util.*;
 public class Problem1370 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1370();
+		Problem1370 instance = new Problem1370();
 
-		var input = "aaaabbbbcccc";
+		String input = "aaaabbbbcccc";
 
-		var result = instance.sortString(input);
+		String result = instance.sortString(input);
 
 		System.out.println(result);
 
 	}
 
 	public String sortString(String s) {
-		Map<Character, Integer> tree = new TreeMap<Character, Integer>();
+		Map<Character, Integer> tree = new TreeMap<>();
 		Character c;
 		
 		for (int i = 0; i < s.length(); i++) {
@@ -84,18 +84,18 @@ public class Problem1370 {
 		StringBuilder result = new StringBuilder();
 		boolean isDone = true;
 		boolean increment = true;
-		Integer currVal = 0;
+		Integer currVal;
 		
-		TreeMap<Character, Integer> Rtree = 
-                new TreeMap<Character, Integer>(Collections.reverseOrder());
+		TreeMap<Character, Integer> Rtree =
+				new TreeMap<>(Collections.reverseOrder());
 
-		for (var t : tree.entrySet()) {
+		for (Map.Entry<Character, Integer>  t : tree.entrySet()) {
 			Rtree.put(t.getKey(), t.getValue());
 		}
 		
 	    while(isDone) {
 			if(increment) {
-				for (var t : tree.entrySet()) {
+				for (Map.Entry<Character, Integer>  t : tree.entrySet()) {
 					currVal = t.getValue();
 					if(currVal > 0) {
 						result.append(t.getKey());
@@ -107,7 +107,7 @@ public class Problem1370 {
 				increment = false;
 			}
 			else {
-				for (var t : Rtree.entrySet()) {
+				for (Map.Entry<Character, Integer> t : Rtree.entrySet()) {
 					currVal = t.getValue();
 					if(currVal > 0) {
 						result.append(t.getKey());
@@ -120,7 +120,7 @@ public class Problem1370 {
 			}
 			
 			isDone = false;
-			for (var t : tree.entrySet()) {
+			for (Map.Entry<Character, Integer> t : tree.entrySet()) {
 				if(t.getValue() > 0) {
 					isDone = true;
 					break;
@@ -128,7 +128,6 @@ public class Problem1370 {
 			}
 			
 		}
-		
 		
 		return  result.toString();
 	}

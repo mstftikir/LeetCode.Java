@@ -52,34 +52,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Problem1389 {
+    public static void main(String[] args) {
+        Problem1389 instance = new Problem1389();
 
-	public static void main(String[] args) {
-		var instance = new Problem1389();
-		
-		int [] nums = {0,1,2,3,4}, index = {0,1,2,2,1};
-				
-		int [] result = instance.createTargetArray(nums, index);
-		
-		for (int i : result) {
-			System.out.println(i);
-		}
-	}
-	
+        int[] nums = {0, 1, 2, 3, 4}, index = {0, 1, 2, 2, 1};
+
+        int[] result = instance.createTargetArray(nums, index);
+
+        for (int i : result) {
+            System.out.println(i);
+        }
+    }
+
     public int[] createTargetArray(int[] nums, int[] index) {
-    	int [] target = new int[nums.length];
-    	
+        int[] target = new int[nums.length];
+
         List<Integer> list = new ArrayList<>();
-        
+
         for (int i = 0; i < nums.length; i++) {
-        	list.add(index[i], nums[i]);
-		}
-        
+            list.add(index[i], nums[i]);
+        }
+
         for (int i = 0; i < list.size(); i++) {
-			target[i] = (int) list.get(i);
-		}
-        
+            target[i] = list.get(i);
+        }
+
         return target;
     }
-	
-
 }

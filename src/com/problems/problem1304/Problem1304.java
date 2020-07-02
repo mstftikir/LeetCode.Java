@@ -33,9 +33,9 @@ package com.problems.problem1304;
 public class Problem1304 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1304();
-		
-		var input = 4;
+		Problem1304 instance = new Problem1304();
+
+		int input = 4;
 		
 		int [] result = instance.sumZero(input);
 		

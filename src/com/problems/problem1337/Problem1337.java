@@ -109,7 +109,7 @@ public class Problem1337 {
         for (int i = 0; i < k; i++) {
             smallest = Integer.MAX_VALUE;
             smallestKey = 0;
-            for (var m : map.entrySet()){
+            for (Map.Entry<Integer, Integer> m : map.entrySet()){
                 if(m.getValue() < smallest){
                     smallest = m.getValue();
                     smallestKey = m.getKey();

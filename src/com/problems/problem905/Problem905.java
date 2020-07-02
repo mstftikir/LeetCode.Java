@@ -22,13 +22,11 @@ Note:
 package com.problems.problem905;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
 import java.util.List;
 
 public class Problem905 {
     public static void main(String [] args){
-        var instance = new Problem905();
+        Problem905 instance = new Problem905();
 
         int [] input = {3,1,2,4};
 

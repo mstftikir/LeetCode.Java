@@ -36,28 +36,24 @@ package com.problems.problem1266;
 public class Problem1266 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1266();
+		Problem1266 instance = new Problem1266();
 
 		int [][] input = {{1,1},{3,4},{-1,0}};
-		
-		var result = instance.minTimeToVisitAllPoints(input);
+
+		int result = instance.minTimeToVisitAllPoints(input);
 		
 		System.out.println(result);
 	}
 
 	public int minTimeToVisitAllPoints(int[][] points) {
-		int counter = 0, diffHor = 0, diffVer = 0, diff = 0;
+		int counter = 0, diffHor, diffVer, diff;
 
 		for (int i = 0; i < points.length - 1; i++) {
 			diffHor = Math.abs(points[i][0] - points[i + 1][0]);
 
 			diffVer = Math.abs(points[i][1] - points[i + 1][1]);
 
-			if (diffHor > diffVer) {
-				diff = diffHor;
-			} else {
-				diff = diffVer;
-			}
+			diff = Math.max(diffHor, diffVer);
 
 			counter += diff;
 		}

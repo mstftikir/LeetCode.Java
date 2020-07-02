@@ -33,14 +33,14 @@ package com.problems.problem1342;
 public class Problem1342 {
 
 	public static void main(String[] args) {
-		
-		var instance = new Problem1342();
-		
-		var input = 14;
-		
-        var result = instance.numberOfSteps(input);
+
+        Problem1342 instance = new Problem1342();
+
+        int input = 14;
+
+        int result = instance.numberOfSteps(input);
         
-        //System.out.println(result);
+        System.out.println(result);
 	}
 	
 	public int numberOfSteps (int num) {
@@ -49,12 +49,11 @@ public class Problem1342 {
         while(num > 0){
             if(num % 2 == 0){
                 num /= 2;
-                counter++;
             }
             else{
             	num--;
-                counter++;
             }
+            counter++;
         }
         
         return counter;

@@ -38,7 +38,7 @@ import java.util.List;
 
 public class Problem1380 {
     public static void main(String[] args) {
-        var instance = new Problem1380();
+        Problem1380 instance = new Problem1380();
 
         int[][] input =
                         {{1,10,4,2},
@@ -47,7 +47,7 @@ public class Problem1380 {
 
         List<Integer> result = instance.luckyNumbers(input);
 
-        for (var l : result) {
+        for (Integer l : result) {
             System.out.println(l);
         }
 
@@ -57,12 +57,12 @@ public class Problem1380 {
         List<Integer> minRow = new LinkedList<>();
         List<Integer> maxCol = new LinkedList<>();
 
-        Integer min, max;
-        for (int i = 0; i < matrix.length; i++) {
+        int min, max;
+        for (int[] ints : matrix) {
             min = Integer.MAX_VALUE;
-            for (int j = 0; j < matrix[i].length; j++) {
-                if(matrix[i][j] < min){
-                    min = matrix[i][j];
+            for (int anInt : ints) {
+                if (anInt < min) {
+                    min = anInt;
                 }
             }
 
@@ -72,9 +72,9 @@ public class Problem1380 {
         for (int i = 0; i < matrix[0].length; i++) {
             max = Integer.MIN_VALUE;
 
-            for (int j = 0; j < matrix.length; j++) {
-                if(matrix[j][i] > max){
-                    max = matrix[j][i];
+            for (int[] ints : matrix) {
+                if (ints[i] > max) {
+                    max = ints[i];
                 }
             }
 

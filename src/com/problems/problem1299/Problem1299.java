@@ -23,7 +23,7 @@ package com.problems.problem1299;
 public class Problem1299 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1299();
+		Problem1299 instance = new Problem1299();
 
 		int [] input = { 17, 18, 5, 4, 6, 1 };
 

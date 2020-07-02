@@ -28,7 +28,7 @@ package com.problems.problem1351;
 public class Problem1351 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1351();
+		Problem1351 instance = new Problem1351();
 		
 		int [][] input = 
 			   {{4,3,2,-1},
@@ -43,14 +43,14 @@ public class Problem1351 {
 	
     public int countNegatives(int[][] grid) {
     	int counter = 0;
-    	
-        for (int i = 0; i < grid.length; i++) {
-    		for (int j = 0; j < grid[i].length; j++) {
-                if(grid[i][j] < 0) {
-                    int remainig = grid[i].length - j;
-                    counter += remainig;
-                    break;
-                }
+
+		for (int[] ints : grid) {
+			for (int j = 0; j < ints.length; j++) {
+				if (ints[j] < 0) {
+					int remainig = ints.length - j;
+					counter += remainig;
+					break;
+				}
 			}
 		}
     	

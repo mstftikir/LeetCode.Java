@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 public class Problem561 {
     public static void main(String[] args) {
-        var instance = new Problem561();
+        Problem561 instance = new Problem561();
 
         int[] input = {1, 4, 3, 2};
 

@@ -3,11 +3,11 @@ package com.problems.problem1295;
 public class Problem1295 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1295();
+		Problem1295 instance = new Problem1295();
 		
 		int[] input = {12,345,2,6,7896};
-		
-		var result = instance.findNumbers(input);
+
+		int result = instance.findNumbers(input);
 		
 		System.out.println(result);
 	}
@@ -15,12 +15,12 @@ public class Problem1295 {
 	// Solution with O(n) time complexity
 	public int findNumbers(int[] nums) {
 		int counter = 0;
-        Integer i = 0;
-        String s = "";
+        int i;
+        String s;
         
     	for (int num : nums) {
     		i = num;
-    		s = i.toString();
+    		s = Integer.toString(i);
     		if(s.length() % 2 == 0) {
     			counter++;
     		}

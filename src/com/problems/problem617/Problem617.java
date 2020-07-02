@@ -32,7 +32,7 @@ import com.common.TreeNode;
 public class Problem617 {
 
     public static void main(String[] args) {
-        var instance = new Problem617();
+        Problem617 instance = new Problem617();
 
         TreeNode t1 = new TreeNode(1);
         t1.left = new TreeNode(3);
@@ -45,7 +45,7 @@ public class Problem617 {
         t2.right = new TreeNode(3);
         t2.right.right = new TreeNode(7);
 
-        var result = instance.mergeTrees(t1, t2);
+        TreeNode result = instance.mergeTrees(t1, t2);
 
         print(result);
     }

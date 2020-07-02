@@ -30,17 +30,17 @@ package com.problems.problem1281;
 public class Problem1281 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1281();
-		
-		var input = 234;
-		
-		var result = instance.subtractProductAndSum(input);
+		Problem1281 instance = new Problem1281();
+
+		int input = 234;
+
+		int result = instance.subtractProductAndSum(input);
 		
 		System.out.println(result);
 	}
 
     public int subtractProductAndSum(int n) {
-    	int product = 1, sum = 0, figure = 0;
+    	int product = 1, sum = 0, figure;
     	
     	while(n > 0) {
     		figure = n % 10;

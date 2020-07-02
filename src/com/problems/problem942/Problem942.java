@@ -33,7 +33,7 @@ package com.problems.problem942;
 public class Problem942 {
 
     public static void main(String[] args) {
-        var instance = new Problem942();
+        Problem942 instance = new Problem942();
 
         String input = "IDID";
 

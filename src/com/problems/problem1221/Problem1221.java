@@ -41,11 +41,11 @@ package com.problems.problem1221;
 public class Problem1221 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1221();
+        Problem1221 instance = new Problem1221();
 		
-		var input = "RLRRLLRLRL";
-		
-		var result = instance.balancedStringSplit(input);
+		String input = "RLRRLLRLRL";
+
+        int result = instance.balancedStringSplit(input);
 		
 		System.out.println(result);
 	}

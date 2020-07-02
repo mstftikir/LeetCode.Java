@@ -33,15 +33,13 @@ Output: 7
 package com.problems.problem1394;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
 public class Problem1394 {
     public static void main(String[] args) {
-        var instance = new Problem1394();
+        Problem1394 instance = new Problem1394();
 
-        //{2,2,3,4};
         int [] input = {5,4,7,8,4,8,8,3,7,7,6,3,7,6,5,6,8,4,5,7,4,7,7,5,2,5,6,6,8,1,6,8,8,8,9,3,2,9};
 
         int result = instance.findLucky(input);

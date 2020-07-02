@@ -79,7 +79,7 @@ public class Problem1356 {
             map.put(bitCounter, list);
         }
 
-        for(var l : map.entrySet()){
+        for(Map.Entry<Integer, List<Integer>>  l : map.entrySet()){
             returnList.addAll(l.getValue());
         }
 

@@ -29,7 +29,7 @@ import java.util.*;
 
 public class Problem929 {
     public static void main(String[] args) {
-        var instance = new Problem929();
+        Problem929 instance = new Problem929();
 
         String[] input = {"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
 

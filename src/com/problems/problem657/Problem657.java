@@ -24,11 +24,11 @@ package com.problems.problem657;
 
 public class Problem657 {
     public static void main(String[] args) {
-        var instance = new Problem657();
+        Problem657 instance = new Problem657();
 
-        var input = "UD";
+        String input = "UD";
 
-        var result = instance.judgeCircle(input);
+        boolean result = instance.judgeCircle(input);
 
         System.out.println(result);
     }

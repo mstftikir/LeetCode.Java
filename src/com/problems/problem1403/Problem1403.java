@@ -37,8 +37,8 @@ import java.util.*;
 public class Problem1403 {
 
     public static void main(String[] args) {
-        var instance = new Problem1403();
-        //4,3,10,9,8
+        Problem1403 instance = new Problem1403();
+
         int [] input = {4,4,7,6,7};
 
         List<Integer> result = instance.minSubsequence(input);

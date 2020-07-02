@@ -28,7 +28,7 @@ import java.util.*;
 
 public class Problem922 {
     public static void main(String[] args) {
-        var instance = new Problem922();
+        Problem922 instance = new Problem922();
 
         int[] input = {4, 2, 5, 7};
 

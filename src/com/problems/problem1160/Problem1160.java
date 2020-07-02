@@ -35,7 +35,7 @@ import java.util.*;
 
 public class Problem1160 {
     public static void main(String[] args) {
-        var instance = new Problem1160();
+        Problem1160 instance = new Problem1160();
 
         String[] words = {"cat","bt","hat","tree"};
         String chars = "atach";

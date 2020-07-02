@@ -36,7 +36,7 @@ import java.util.ArrayList;
 public class Problem1313 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1313();
+		Problem1313 instance = new Problem1313();
 		
 		int [] input = {1,2,3,4};
 		
@@ -49,7 +49,7 @@ public class Problem1313 {
 
     public int[] decompressRLElist(int[] nums) {
 
-    	List<Integer> list = new ArrayList<Integer>(); 
+    	List<Integer> list = new ArrayList<>();
     	
     	for (int i = 0; i < nums.length; i++) {
 			
@@ -60,7 +60,7 @@ public class Problem1313 {
 			}
 		}
     	
-    	Integer[] IntArr = list.toArray(new Integer[list.size()]);
+    	Integer[] IntArr = list.toArray(new Integer[0]);
 
     	int arrLength = IntArr.length;
     	

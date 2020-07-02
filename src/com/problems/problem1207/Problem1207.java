@@ -51,8 +51,8 @@ public class Problem1207 {
 
         }
 
-        for(var m : map.entrySet()){
-            for(var n : map.entrySet()){
+        for(Map.Entry<Integer, Integer> m : map.entrySet()){
+            for(Map.Entry<Integer, Integer> n : map.entrySet()){
                 if(!m.getKey().equals(n.getKey()) && m.getValue().equals(n.getValue())){
                     return false;
                 }

@@ -35,11 +35,11 @@ import java.util.Set;
 public class Problem804 {
 
 	public static void main(String[] args) {
-		var instance = new Problem804();
+		Problem804 instance = new Problem804();
 		
 		String [] input = {"gin", "zen", "gig", "msg"};
 		
-		var result = instance.uniqueMorseRepresentations(input);
+		int result = instance.uniqueMorseRepresentations(input);
 		
 		System.out.println(result);
 	}
@@ -49,7 +49,7 @@ public class Problem804 {
         
     	StringBuilder sb;
     	
-    	Set<String> set = new HashSet<String>();
+    	Set<String> set = new HashSet<>();
     	
     	for (String word : words) {
     		sb = new StringBuilder();

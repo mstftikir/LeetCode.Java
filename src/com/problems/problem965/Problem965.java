@@ -25,7 +25,7 @@ public class Problem965 {
     public boolean isUnival = true;
 
     public static void main(String[] args) {
-        var instance = new Problem965();
+        Problem965 instance = new Problem965();
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(1);

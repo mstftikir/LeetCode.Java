@@ -55,7 +55,7 @@ public class Problem1379 {
 
     public static void main(String[] args) {
 
-        var instance = new Problem1379();
+        Problem1379 instance = new Problem1379();
 
         TreeNode inputOriginal = new TreeNode(7);
 
@@ -64,7 +64,7 @@ public class Problem1379 {
         inputOriginal.right.left = new TreeNode(6);
         inputOriginal.right.right = new TreeNode(19);
 
-        var result = instance.getTargetCopy(inputOriginal, inputOriginal, inputOriginal.right);
+        TreeNode result = instance.getTargetCopy(inputOriginal, inputOriginal, inputOriginal.right);
 
         System.out.println(result.val);
     }

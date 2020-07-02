@@ -32,18 +32,18 @@ Constraints:
 
 package com.problems.problem1365;
 
-import java.awt.List;
+import java.util.List;
 import java.util.Arrays;
 import java.util.Collections;
 
 public class Problem1365 {
 
 	public static void main(String[] args) {
-		var instance = new Problem1365();
+		Problem1365 instance = new Problem1365();
 		
-		int input[] = {8,1,2,2,3};
-		
-		var result = instance.smallerNumbersThanCurrent(input);
+		int[] input= {8,1,2,2,3};
+
+		int[] result = instance.smallerNumbersThanCurrent(input);
 		
 		for (int i : result) {
 			System.out.println(i);
@@ -59,7 +59,7 @@ public class Problem1365 {
 			copy[i] = nums[i];
 		}
     	
-    	var list = Arrays.asList(copy);
+    	List<Integer> list = Arrays.asList(copy);
     	
     	Collections.sort(list);
     	

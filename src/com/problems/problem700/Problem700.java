@@ -30,7 +30,7 @@ import com.common.TreeNode;
 public class Problem700 {
 
     public static void main(String[] args) {
-        var instance = new Problem700();
+        Problem700 instance = new Problem700();
 
         int [] input = {5, 2, 7, 1 ,3};
 

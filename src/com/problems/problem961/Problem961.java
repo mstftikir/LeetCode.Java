@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Problem961 {
     public static void main(String[] args) {
-        var instance = new Problem961();
+        Problem961 instance = new Problem961();
 
         int[] input = {1, 2, 3, 3};
 

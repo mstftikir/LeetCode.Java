@@ -43,11 +43,6 @@ public class Problem1025 {
     }
 
     public boolean divisorGame(int N) {
-        if(N % 2 == 0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return N % 2 == 0;
     }
 }

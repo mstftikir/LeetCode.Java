@@ -12,7 +12,7 @@ package com.problems.problem852;
 
 public class Problem852 {
     public static void main(String[] args) {
-        var instance = new Problem852();
+        Problem852 instance = new Problem852();
 
         int [] input = {0,1,0};
 
